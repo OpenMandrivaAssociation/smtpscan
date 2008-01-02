@@ -10,6 +10,7 @@ Source1:	remote_smtp_detect.pdf.bz2
 Patch0:		smtpscan-0.4.patch
 Requires:	perl perl-Net-DNS
 BuildArch:	noarch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 Smtpscan is a tool to guess which MTA is used by sending several
