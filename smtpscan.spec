@@ -1,7 +1,7 @@
 Summary:	Remote SMTP Server Detection
 Name:		smtpscan
 Version:	0.5
-Release:	%mkrel 3
+Release:	%mkrel 4
 License:	GPL
 Group:		Monitoring
 URL:		http://www.greyhats.org/outils/smtpscan/
@@ -27,7 +27,7 @@ error codes.
 %build
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot} 
+rm -rf %{buildroot} 
 
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man1
@@ -41,7 +41,7 @@ install -m644 src/tests %{buildroot}%{_datadir}/smtpscan/
 bzcat %{SOURCE1} > remote_smtp_detect.pdf
 
 %clean 
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot} 
+rm -rf %{buildroot} 
 
 %files
 %defattr(-,root,root)
@@ -49,4 +49,3 @@ bzcat %{SOURCE1} > remote_smtp_detect.pdf
 %{_bindir}/smtpscan
 %{_datadir}/smtpscan
 %{_mandir}/man1/*
-
