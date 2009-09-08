@@ -1,7 +1,7 @@
 Summary:	Remote SMTP Server Detection
 Name:		smtpscan
 Version:	0.5
-Release:	%mkrel 4
+Release:	%mkrel 5
 License:	GPL
 Group:		Monitoring
 URL:		http://www.greyhats.org/outils/smtpscan/
