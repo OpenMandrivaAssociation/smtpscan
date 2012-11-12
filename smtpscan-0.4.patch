@@ -1,0 +1,40 @@
+diff -Naur smtpscan/docs/man/smtpscan.1 smtpscan.oden/docs/man/smtpscan.1
+--- smtpscan/docs/man/smtpscan.1	2003-02-07 00:08:19.000000000 +0100
++++ smtpscan.oden/docs/man/smtpscan.1	2003-03-27 22:12:05.000000000 +0100
+@@ -1,6 +1,6 @@
+-.TH SMTPSCAN "1" "20020821" "smtpscan @VERSION@"
++.TH SMTPSCAN "1" "20020821" "smtpscan 0.4"
+ .SH NAME
+-.B smtpscan @VERSION@
++.B smtpscan 0.4
+ 
+ .SH SYNOPSIS
+ .B smtpscan
+@@ -88,10 +88,10 @@
+ at 15 seconds
+ 
+ .SH FILES
+-.I @prefix@/smtpscan/fingerprints
++.I /usr/share/smtpscan/fingerprints
+ - fingerprints file
+ 
+-.I @prefix@/smtpscan/tests
++.I /usr/share/smtpscan/tests
+ - tests file
+ 
+ .SH AUTHOR
+diff -Naur smtpscan/src/smtpscan smtpscan.oden/src/smtpscan
+--- smtpscan/src/smtpscan	2003-02-07 00:19:43.000000000 +0100
++++ smtpscan.oden/src/smtpscan	2003-03-27 22:13:00.000000000 +0100
+@@ -32,9 +32,9 @@
+                                     # characters
+ my $mail_user   = '';
+ 
+-$LOCAL_SHARE    = '/usr/local/share';
++$LOCAL_SHARE    = '/usr/share';
+ 
+-$VERSION        = '@VERSION@';
++$VERSION        = '0.4';
+ 
+ @VALID_CHARS    = ( 'A' .. 'Z', 'a' .. 'z', '0' .. '9', '_');
+ 
