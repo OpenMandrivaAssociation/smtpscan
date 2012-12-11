@@ -49,3 +49,30 @@ rm -rf %{buildroot}
 %{_bindir}/smtpscan
 %{_datadir}/smtpscan
 %{_mandir}/man1/*
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.5-5mdv2010.0
++ Revision: 433968
+- rebuild
+
+* Sun Jul 20 2008 Oden Eriksson <oeriksson@mandriva.com> 0.5-4mdv2009.0
++ Revision: 239033
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Fri Jul 14 2006 Oden Eriksson <oeriksson@mandriva.com> 0.5-3mdv2007.0
+- rebuild
+
+* Fri Jun 03 2005 Oden Eriksson <oeriksson@mandriva.com> 0.5-2mdk
+- rebuild
+
+* Sun May 16 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 0.5-1mdk
+- 0.5
+
