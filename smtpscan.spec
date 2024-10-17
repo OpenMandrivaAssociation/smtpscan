@@ -4,7 +4,7 @@ Version:	0.5
 Release:	6
 License:	GPL
 Group:		Monitoring
-URL:		http://www.greyhats.org/outils/smtpscan/
+URL:		https://www.greyhats.org/outils/smtpscan/
 Source0:	%{name}-%{version}.tar.bz2
 Source1:	remote_smtp_detect.pdf.bz2
 Patch0:		smtpscan-0.4.patch
